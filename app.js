@@ -12,37 +12,7 @@ app.use(function(req, res, next) {
 
 //this post request is still under construction
 
-app.post('/', (req, res) => {
-  console.log(req, 'req sanity check');
-  const con = mysql.createConnection({
-    host: 'localhost',
-    user: 'mason',
-    password: 'Ohayoo#13',
-    database: 'where-to'
-  });
-  con.connect((err) => {
-    if(err){
-      console.log('Error connecting to Db');
-      return;
-    }
-    console.log('Connection established');
-  });
-
-  con.query('INSERT INTO user_data (userName, guessInfo) VALUES (userName, guessInfo)', (err, rows) => {
-    if (err) throw err;
-    // console.log(JSON.stringify(rows));
-    res.send(rows);
-  });
-
-  con.end((err) => {
-    // The connection is terminated gracefully
-    // Ensures all remaining queries are executed
-    // Then sends a quit packet to the MySQL server.
-  });
-});
-
-
-
+//SQL CALL STARTS HERE
 
 app.get('/', (req, res) => {
 // First you need to create a connection to the database
@@ -75,6 +45,8 @@ app.get('/', (req, res) => {
   });
 });
 
+//NEWS API CALL STARTS HERE
+
 app.get('/news', (req, res) => {
   const NewsAPI = require('newsapi');
   const newsapi = new NewsAPI('3e01951ca9fc467bb9a23432e391b2b6');
@@ -86,20 +58,26 @@ app.get('/news', (req, res) => {
   // All options passed to topHeadlines are optional, but you need to include at least one of them
 
   newsapi.v2.everything({
-    //query will eventually need to be the result.country we receive from Results Calculator on the client side.
     q: req.query.q,
     language: 'en',
     pageSize: '20',
-    //country will eventually be the provided country ISO
   }).then(response => {
     res.send(response)
-    /*
-      {
-        status: "ok",
-        articles: [...]
-      }
-    */
   });
 });
+
+//WEATHER API CALL STARTS HERE
+
+app.get('/weather', async (req, res) => {
+  const fetch = require("node-fetch");
+  const capital = req.query.q;
+  // console.log('query check',capital);
+
+  const response = await fetch(`https://api.openweathermap.org/data/2.5/forecast?q=${capital}&appid=ff1c70e34ab35b7f59df0cdc87918826`)
+  const json = await response.json();
+  res.send(json);
+  // console.log(json, 'weather response sanity check')
+});
+
 
 app.listen(port, () => console.log(`Example app listening at http://localhost:${port}`));

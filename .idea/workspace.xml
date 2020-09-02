@@ -1,13 +1,22 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="3d438757-f13b-4aa9-80ce-b5ab8f4a639c" name="Default Changelist" comment="" />
+    <list default="true" id="3d438757-f13b-4aa9-80ce-b5ab8f4a639c" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app.js" beforeDir="false" afterPath="$PROJECT_DIR$/app.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/node-fetch/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/node-fetch/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
   <component name="ProjectId" id="1f155yVECnOUuzsRVzauMUidK1u" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showExcludedFiles" value="true" />
@@ -47,7 +56,15 @@
       <workItem from="1597261240655" duration="3018000" />
       <workItem from="1597268896026" duration="1628000" />
       <workItem from="1597276208196" duration="604000" />
-      <workItem from="1597352675701" duration="1965000" />
+      <workItem from="1597352675701" duration="2209000" />
+      <workItem from="1597370967386" duration="726000" />
+      <workItem from="1598315966326" duration="606000" />
+      <workItem from="1598389868462" duration="3535000" />
+      <workItem from="1598480418847" duration="1202000" />
+      <workItem from="1598561339137" duration="2153000" />
+      <workItem from="1598729476024" duration="3387000" />
+      <workItem from="1598907559184" duration="9669000" />
+      <workItem from="1598991170815" duration="2237000" />
     </task>
     <servers />
   </component>
