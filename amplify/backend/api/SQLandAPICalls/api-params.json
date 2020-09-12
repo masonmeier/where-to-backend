@@ -1,0 +1,35 @@
+{
+    "paths": [
+        {
+            "name": "/getinfo",
+            "lambdaFunction": "wheretobackend",
+            "privacy": {
+                "open": true
+            },
+            "policyResourceName": "/getinfo"
+        }
+    ],
+    "resourceName": "SQLandAPICalls",
+    "apiName": "SQLandAPICalls",
+    "functionArns": [
+        {
+            "lambdaFunction": "wheretobackend"
+        }
+    ],
+    "privacy": {
+        "auth": 0,
+        "unauth": 0,
+        "authRoleName": "amplify-wtbe-wtbackend-140349-authRole",
+        "unAuthRoleName": "amplify-wtbe-wtbackend-140349-unauthRole"
+    },
+    "dependsOn": [
+        {
+            "category": "function",
+            "resourceName": "wheretobackend",
+            "attributes": [
+                "Name",
+                "Arn"
+            ]
+        }
+    ]
+}

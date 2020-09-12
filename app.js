@@ -18,6 +18,7 @@ app.get('/', (req, res) => {
 // First you need to create a connection to the database
 // Be sure to replace 'user' and 'password' with the correct values
   const con = mysql.createConnection({
+    // host: 'where-to-database.cgum1ruwasjh.us-west-2.rds.amazonaws.com',
     host: 'localhost',
     user: 'mason',
     password: 'Ohayoo#13',
@@ -81,3 +82,4 @@ app.get('/weather', async (req, res) => {
 
 
 app.listen(port, () => console.log(`Example app listening at http://localhost:${port}`));
+
