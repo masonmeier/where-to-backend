@@ -2,7 +2,6 @@ const mysql = require('mysql');
 const express = require('express');
 const app = express();
 const port = 3002;
-const host = '0.0.0.0';
 
 
 app.use(function(req, res, next) {
@@ -82,5 +81,5 @@ app.get('/weather', async (req, res) => {
 });
 
 
-app.listen(port, host,  () => console.log(`Example app listening at http://localhost:${port}`));
+app.listen(port,  () => console.log(`Example app listening at http://localhost:${port}`));
 
