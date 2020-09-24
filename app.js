@@ -16,31 +16,9 @@ app.use(cors());
 app.get('/', (req, res) => {
 // First you need to create a connection to the database
 // Be sure to replace 'user' and 'password' with the correct values
-  const con = mysql.createConnection({
-    // host: 'where-to-database.cgum1ruwasjh.us-west-2.rds.amazonaws.com',
-    host: 'localhost',
-    user: 'mason',
-    password: 'Ohayoo#13',
-    database: 'where-to'
-  });
-
-  con.connect((err) => {
-    if(err){
-      console.log('Error connecting to Db');
-      return;
-    }
-    console.log('Connection established');
-  });
-
-  con.query('SELECT * FROM country_data', (err, rows) => {
-    if (err) throw err;
+  const query = 'SELECT * FROM country_data';
+  runSQL(query).then((rows) => {
     res.send(rows);
-  });
-
-  con.end((err) => {
-    // The connection is terminated gracefully
-    // Ensures all remaining queries are executed
-    // Then sends a quit packet to the MySQL server.
   });
 });
 
@@ -82,34 +60,9 @@ app.post('/submit',function(req,res){
   const user_name = req.body.nameText;
   const guess = req.body.guessInput;
   console.log('attempting to submit to database', submit_title, user_name, guess);
-
-  const con = mysql.createConnection({
-    // host: 'where-to-database.cgum1ruwasjh.us-west-2.rds.amazonaws.com',
-    host: 'localhost',
-    user: 'mason',
-    password: 'Ohayoo#13',
-    database: 'where-to'
-  });
-
-  con.connect((err) => {
-    if(err){
-      console.log('Error connecting to Db');
-      return;
-    }
-    console.log('Connection established');
-  });
-
   const query = `INSERT INTO user_submissions (user_guess, submit_title, user_name) VALUES ('${guess}', '${submit_title}', '${user_name}')`;
-  console.log(query, 'buckteeth');
-  con.query(query, (err, rows) => {
-    if (err) throw err;
-  });
+  runSQL(query);
 
-  con.end((err) => {
-    // The connection is terminated gracefully
-    // Ensures all remaining queries are executed
-    // Then sends a quit packet to the MySQL server.
-  });
   res.end("yes");
 });
 
@@ -133,20 +86,15 @@ app.use(function(req, res){
   res.type('txt').send('Not found');
 });
 
-
-app.listen(port, host,  () => console.log(`App listening at http://localhost:${port}`));
-
 function runSQL(query) {
   return new Promise(function (resolve, reject) {
-
     const con = mysql.createConnection({
-      // host: 'where-to-database.cgum1ruwasjh.us-west-2.rds.amazonaws.com',
-      host: 'localhost',
+      host: 'where-to-database.cgum1ruwasjh.us-west-2.rds.amazonaws.com',
+      // host: 'localhost',
       user: 'mason',
       password: 'Ohayoo#13',
       database: 'where-to'
     });
-
     con.connect((err) => {
       if (err) {
         console.log('Error connecting to Db');
@@ -154,12 +102,11 @@ function runSQL(query) {
       }
       console.log('Connection established');
     });
-
     console.log(query, 'buckteeth');
     con.query(query, (err, rows) => {
-      if (err) throw err;
+      resolve(rows);
+      if (err) reject(err);
     });
-
     con.end((err) => {
       // The connection is terminated gracefully
       // Ensures all remaining queries are executed
@@ -167,3 +114,5 @@ function runSQL(query) {
     });
   });
 }
+
+app.listen(port, host,  () => console.log(`App listening at http://localhost:${port}`));

@@ -1,4 +1,5 @@
 #amplify
+.idea/workspace.xml
 amplify/\#current-cloud-backend
 amplify/.config/local-*
 amplify/mock-data
