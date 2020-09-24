@@ -4,7 +4,16 @@
     <list default="true" id="3d438757-f13b-4aa9-80ce-b5ab8f4a639c" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app.js" beforeDir="false" afterPath="$PROJECT_DIR$/app.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/newsAPICall.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/body-parser/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/body-parser/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/node-fetch/CHANGELOG.md" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/node-fetch/CHANGELOG.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/node-fetch/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/node-fetch/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/node-fetch/browser.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/node-fetch/browser.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/node-fetch/lib/index.es.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/node-fetch/lib/index.es.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/node-fetch/lib/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/node-fetch/lib/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/node-fetch/lib/index.mjs" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/node-fetch/lib/index.mjs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/node-fetch/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/node-fetch/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -75,7 +84,13 @@
       <workItem from="1599868943658" duration="1686000" />
       <workItem from="1600047757037" duration="2174000" />
       <workItem from="1600127030787" duration="607000" />
-      <workItem from="1600211805488" duration="1960000" />
+      <workItem from="1600211805488" duration="3249000" />
+      <workItem from="1600291178399" duration="583000" />
+      <workItem from="1600380668159" duration="616000" />
+      <workItem from="1600388812004" duration="4000" />
+      <workItem from="1600733824672" duration="642000" />
+      <workItem from="1600804902180" duration="957000" />
+      <workItem from="1600900375252" duration="9343000" />
     </task>
     <servers />
   </component>
@@ -91,5 +106,9 @@
       <screen x="1920" y="0" width="1536" height="834" />
     </state>
     <state x="2852" y="174" key="FileChooserDialogImpl/0.0.1920.1050/1920.0.1536.834@1920.0.1536.834" timestamp="1596596935142" />
+    <state x="230" y="143" key="com.intellij.openapi.editor.actions.MultiplePasteAction$ClipboardContentChooser" timestamp="1600910243569">
+      <screen x="0" y="0" width="1920" height="1050" />
+    </state>
+    <state x="230" y="143" key="com.intellij.openapi.editor.actions.MultiplePasteAction$ClipboardContentChooser/0.0.1920.1050/1920.0.1536.834@0.0.1920.1050" timestamp="1600910243569" />
   </component>
 </project>
