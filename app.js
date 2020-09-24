@@ -3,7 +3,6 @@ const express = require('express');
 const app = express();
 const cors = require('cors');
 const port = 3002;
-const host = '0.0.0.0';
 
 // Parse URL-encoded bodies (as sent by HTML forms)
 app.use(express.urlencoded());
@@ -55,6 +54,7 @@ app.get('/weather', async (req, res) => {
 
 //USER INFORMATION POST REQUEST STARTS HERE
 
+<<<<<<< HEAD
 app.post('/submit',function(req,res){
   const submit_title = req.body.title;
   const user_name = req.body.nameText;
@@ -114,5 +114,8 @@ function runSQL(query) {
     });
   });
 }
+=======
+app.listen(port,  () => console.log(`Example app listening at http://localhost:${port}`));
+>>>>>>> 15cddddfa8add617e178b4736334e920adebb834
 
 app.listen(port, host,  () => console.log(`App listening at http://localhost:${port}`));
