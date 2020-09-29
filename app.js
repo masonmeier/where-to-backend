@@ -3,6 +3,10 @@ const express = require('express');
 const app = express();
 const cors = require('cors');
 const port = 3002;
+//respond to any computer that hits this
+const host = '0.0.0.0';
+// const backendAddress = 'localhost';  /*<--- for when we need to switch back to the dev environment*/
+const backendAddress = 'where-to-database.cgum1ruwasjh.us-west-2.rds.amazonaws.com';
 
 // Parse URL-encoded bodies (as sent by HTML forms)
 app.use(express.urlencoded());
@@ -54,7 +58,6 @@ app.get('/weather', async (req, res) => {
 
 //USER INFORMATION POST REQUEST STARTS HERE
 
-<<<<<<< HEAD
 app.post('/submit',function(req,res){
   const submit_title = req.body.title;
   const user_name = req.body.nameText;
@@ -89,8 +92,7 @@ app.use(function(req, res){
 function runSQL(query) {
   return new Promise(function (resolve, reject) {
     const con = mysql.createConnection({
-      host: 'where-to-database.cgum1ruwasjh.us-west-2.rds.amazonaws.com',
-      // host: 'localhost',
+      host: backendAddress,
       user: 'mason',
       password: 'Ohayoo#13',
       database: 'where-to'
@@ -114,8 +116,5 @@ function runSQL(query) {
     });
   });
 }
-=======
-app.listen(port,  () => console.log(`Example app listening at http://localhost:${port}`));
->>>>>>> 15cddddfa8add617e178b4736334e920adebb834
 
-app.listen(port, host,  () => console.log(`App listening at http://localhost:${port}`));
+app.listen(port, host,  () => console.log(`App listening at http://${backendAddress}:${port}`));

@@ -2,7 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="3d438757-f13b-4aa9-80ce-b5ab8f4a639c" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app.js" beforeDir="false" afterPath="$PROJECT_DIR$/app.js" afterDir="false" />
     </list>
@@ -81,7 +80,8 @@
       <workItem from="1600388812004" duration="4000" />
       <workItem from="1600733824672" duration="642000" />
       <workItem from="1600804902180" duration="957000" />
-      <workItem from="1600900375252" duration="11327000" />
+      <workItem from="1600900375252" duration="12500000" />
+      <workItem from="1601417909361" duration="1266000" />
     </task>
     <servers />
   </component>
@@ -101,5 +101,9 @@
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
     <state x="230" y="143" key="com.intellij.openapi.editor.actions.MultiplePasteAction$ClipboardContentChooser/0.0.1920.1050/1920.0.1536.834@0.0.1920.1050" timestamp="1600910243569" />
+    <state x="646" y="241" width="627" height="568" key="find.popup" timestamp="1601420897900">
+      <screen x="0" y="0" width="1920" height="1050" />
+    </state>
+    <state x="646" y="241" width="627" height="568" key="find.popup/0.0.1920.1050/1920.0.1536.834@0.0.1920.1050" timestamp="1601420897900" />
   </component>
 </project>
