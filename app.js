@@ -2,11 +2,12 @@ const mysql = require('mysql');
 const express = require('express');
 const app = express();
 const cors = require('cors');
-const port = 3002;
+const listenPort = 3002;
 //respond to any computer that hits this
 const host = '0.0.0.0';
-// const backendAddress = 'localhost';  /*<--- for when we need to switch back to the dev environment*/
-const backendAddress = 'where-to-database.cgum1ruwasjh.us-west-2.rds.amazonaws.com';
+const backendAddress = 'localhost';  /*<--- for when we need to switch back to the dev environment*/
+// const backendAddress = 'where-to-database.cgum1ruwasjh.us-west-2.rds.amazonaws.com';
+
 
 // Parse URL-encoded bodies (as sent by HTML forms)
 app.use(express.urlencoded());
@@ -92,10 +93,11 @@ app.use(function(req, res){
 function runSQL(query) {
   return new Promise(function (resolve, reject) {
     const con = mysql.createConnection({
-      host: `${backendAddress}:${port}`,
+      host: backendAddress,
       user: 'mason',
       password: 'Ohayoo#13',
-      database: 'where-to'
+      database: 'where-to',
+      port: '3306',
     });
     con.connect((err) => {
       if (err) {
@@ -116,4 +118,4 @@ function runSQL(query) {
   });
 }
 
-app.listen(port, host,  () => console.log(`App listening at http://${backendAddress}:${port}`));
+app.listen(listenPort, host,  () => console.log(`App listening at http://${backendAddress}:${listenPort}`));
