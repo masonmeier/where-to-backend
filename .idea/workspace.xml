@@ -3,7 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="3d438757-f13b-4aa9-80ce-b5ab8f4a639c" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/amplify/backend/function/wheretobackend/src/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/amplify/backend/function/wheretobackend/src/package.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app.js" beforeDir="false" afterPath="$PROJECT_DIR$/app.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -83,7 +82,7 @@
       <workItem from="1600804902180" duration="957000" />
       <workItem from="1600900375252" duration="12500000" />
       <workItem from="1601417909361" duration="3102000" />
-      <workItem from="1601519251418" duration="236000" />
+      <workItem from="1601519251418" duration="982000" />
     </task>
     <servers />
   </component>
@@ -103,10 +102,10 @@
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
     <state x="230" y="143" key="com.intellij.openapi.editor.actions.MultiplePasteAction$ClipboardContentChooser/0.0.1920.1050/1920.0.1536.834@0.0.1920.1050" timestamp="1600910243569" />
-    <state x="646" y="248" width="627" height="585" key="find.popup" timestamp="1601519456666">
+    <state x="646" y="248" width="627" height="585" key="find.popup" timestamp="1601519522170">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
     <state x="646" y="241" width="627" height="568" key="find.popup/0.0.1920.1050/1920.0.1536.834@0.0.1920.1050" timestamp="1601432631906" />
-    <state x="646" y="248" width="627" height="585" key="find.popup/0.0.1920.1080/1920.0.1536.864@0.0.1920.1080" timestamp="1601519456666" />
+    <state x="646" y="248" width="627" height="585" key="find.popup/0.0.1920.1080/1920.0.1536.864@0.0.1920.1080" timestamp="1601519522170" />
   </component>
 </project>

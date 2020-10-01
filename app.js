@@ -92,7 +92,7 @@ app.use(function(req, res){
 function runSQL(query) {
   return new Promise(function (resolve, reject) {
     const con = mysql.createConnection({
-      host: backendAddress,
+      host: `${backendAddress}:${port}`,
       user: 'mason',
       password: 'Ohayoo#13',
       database: 'where-to'
