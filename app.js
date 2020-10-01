@@ -99,12 +99,11 @@ function runSQL(query) {
     });
     con.connect((err) => {
       if (err) {
-        console.log('Error connecting to Db');
+        console.log('Error connecting to Db', err);
         return;
       }
       console.log('Connection established');
     });
-    console.log(query, 'buckteeth');
     con.query(query, (err, rows) => {
       resolve(rows);
       if (err) reject(err);
