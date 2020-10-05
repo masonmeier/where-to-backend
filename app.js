@@ -5,8 +5,9 @@ const cors = require('cors');
 const listenPort = 3002;
 //respond to any computer that hits this
 const host = '0.0.0.0';
-const backendAddress = 'localhost';  /*<--- for when we need to switch back to the dev environment*/
-// const backendAddress = 'where-to-database.cgum1ruwasjh.us-west-2.rds.amazonaws.com';
+//using local host to point the backend to the MYSQL database that is living on the same box
+//we do not need to use the URL in this instance because they exist on the same server.
+const backendAddress = 'localhost';
 
 
 // Parse URL-encoded bodies (as sent by HTML forms)
