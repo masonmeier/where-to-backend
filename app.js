@@ -52,7 +52,6 @@ app.get('/news', (req, res) => {
 app.get('/weather', async (req, res) => {
   const fetch = require("node-fetch");
   const capital = req.query.q;
-
   const response = await fetch(`https://api.openweathermap.org/data/2.5/forecast?q=${capital}&appid=ff1c70e34ab35b7f59df0cdc87918826`);
   const json = await response.json();
   res.send(json);
@@ -64,11 +63,11 @@ app.post('/submit',function(req,res){
   const submit_title = req.body.title;
   const user_name = req.body.nameText;
   const guess = req.body.guessInput;
+  const message = "yes";
   console.log('attempting to submit to database', submit_title, user_name, guess);
   const query = `INSERT INTO user_submissions (user_guess, submit_title, user_name) VALUES ('${guess}', '${submit_title}', '${user_name}')`;
   runSQL(query);
-
-  res.end("yes");
+  res.send({message});
 });
 
 app.use(function(req, res){
