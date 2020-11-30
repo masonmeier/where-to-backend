@@ -7,10 +7,6 @@ const listenPort = 3002;
 const host = '0.0.0.0';
 //using local host to point the backend to the MYSQL database that is living on the same box
 //we do not need to use the URL in this instance because they exist on the same server.
-const backendAddress = 'localhost';
-
-
-// Parse URL-encoded bodies (as sent by HTML forms)
 app.use(express.urlencoded());
 // Parse JSON bodies (as sent by API clients)
 app.use(express.json());
