@@ -5,6 +5,7 @@ const cors = require('cors');
 const listenPort = 3002;
 //respond to any computer that hits this
 const host = '0.0.0.0';
+const backendAddress = 'ec2-44-238-207-106.us-west-2.compute.amazonaws.com'
 //using local host to point the backend to the MYSQL database that is living on the same box
 //we do not need to use the URL in this instance because they exist on the same server.
 app.use(express.urlencoded());

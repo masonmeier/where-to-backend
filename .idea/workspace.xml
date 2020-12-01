@@ -2,7 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="3d438757-f13b-4aa9-80ce-b5ab8f4a639c" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/codeStyles/codeStyleConfig.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dbnavigator.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dbnavigator.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app.js" beforeDir="false" afterPath="$PROJECT_DIR$/app.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -16,13 +19,14 @@
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
-    <option name="showExcludedFiles" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="javascript.nodejs.core.library.configured.version" value="12.16.1" />
+    <property name="javascript.nodejs.core.library.typings.version" value="12.19.8" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
@@ -30,7 +34,9 @@
     <property name="node.js.selected.package.eslint" value="(autodetect)" />
     <property name="node.js.selected.package.tslint" value="(autodetect)" />
     <property name="nodejs_package_manager_path" value="npm" />
+    <property name="vue.rearranger.settings.migration" value="true" />
   </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="SvnConfiguration">
     <configuration />
   </component>
@@ -89,29 +95,23 @@
       <workItem from="1602462952592" duration="1298000" />
       <workItem from="1602530907114" duration="612000" />
       <workItem from="1602630992028" duration="2581000" />
+      <workItem from="1606775083639" duration="4916000" />
     </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
-    <option name="version" value="1" />
+    <option name="version" value="3" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="712" y="314" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1595550699910">
-      <screen x="0" y="0" width="1920" height="1050" />
-    </state>
-    <state x="712" y="314" key="#com.intellij.fileTypes.FileTypeChooser/0.0.1920.1050/-1920.7.1536.834@0.0.1920.1050" timestamp="1595550699910" />
-    <state x="2852" y="174" key="FileChooserDialogImpl" timestamp="1596596935142">
-      <screen x="1920" y="0" width="1536" height="834" />
-    </state>
-    <state x="2852" y="174" key="FileChooserDialogImpl/0.0.1920.1050/1920.0.1536.834@1920.0.1536.834" timestamp="1596596935142" />
     <state x="230" y="143" key="com.intellij.openapi.editor.actions.MultiplePasteAction$ClipboardContentChooser" timestamp="1600910243569">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
     <state x="230" y="143" key="com.intellij.openapi.editor.actions.MultiplePasteAction$ClipboardContentChooser/0.0.1920.1050/1920.0.1536.834@0.0.1920.1050" timestamp="1600910243569" />
-    <state x="646" y="248" width="627" height="585" key="find.popup" timestamp="1601519522170">
-      <screen x="0" y="0" width="1920" height="1080" />
+    <state x="1024" y="266" width="627" height="569" key="find.popup" timestamp="1606779666971">
+      <screen x="0" y="0" width="1920" height="1050" />
     </state>
     <state x="646" y="241" width="627" height="568" key="find.popup/0.0.1920.1050/1920.0.1536.834@0.0.1920.1050" timestamp="1601432631906" />
+    <state x="1024" y="266" width="627" height="569" key="find.popup/0.0.1920.1050/1920.0.1536.864@0.0.1920.1050" timestamp="1606779666971" />
     <state x="646" y="248" width="627" height="585" key="find.popup/0.0.1920.1080/1920.0.1536.864@0.0.1920.1080" timestamp="1601519522170" />
   </component>
   <component name="XDebuggerManager">
@@ -119,7 +119,7 @@
       <breakpoints>
         <line-breakpoint enabled="true" type="javascript">
           <url>file://$PROJECT_DIR$/app.js</url>
-          <line>13</line>
+          <line>10</line>
           <option name="timeStamp" value="1" />
         </line-breakpoint>
       </breakpoints>
