@@ -2,10 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="3d438757-f13b-4aa9-80ce-b5ab8f4a639c" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/codeStyles/codeStyleConfig.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dbnavigator.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dbnavigator.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app.js" beforeDir="false" afterPath="$PROJECT_DIR$/app.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -95,7 +95,10 @@
       <workItem from="1602462952592" duration="1298000" />
       <workItem from="1602530907114" duration="612000" />
       <workItem from="1602630992028" duration="2581000" />
-      <workItem from="1606775083639" duration="4916000" />
+      <workItem from="1606775083639" duration="5035000" />
+      <workItem from="1607387591559" duration="329000" />
+      <workItem from="1607388993485" duration="244000" />
+      <workItem from="1607646765578" duration="3863000" />
     </task>
     <servers />
   </component>
@@ -103,26 +106,19 @@
     <option name="version" value="3" />
   </component>
   <component name="WindowStateProjectService">
+    <state x="0" y="206" key="IDE.errors.dialog" timestamp="1607654880670">
+      <screen x="0" y="0" width="1920" height="1050" />
+    </state>
+    <state x="0" y="206" key="IDE.errors.dialog/0.0.1920.1050/1920.0.1536.864@0.0.1920.1050" timestamp="1607654880670" />
     <state x="230" y="143" key="com.intellij.openapi.editor.actions.MultiplePasteAction$ClipboardContentChooser" timestamp="1600910243569">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
     <state x="230" y="143" key="com.intellij.openapi.editor.actions.MultiplePasteAction$ClipboardContentChooser/0.0.1920.1050/1920.0.1536.834@0.0.1920.1050" timestamp="1600910243569" />
-    <state x="1024" y="266" width="627" height="569" key="find.popup" timestamp="1606779666971">
+    <state x="1024" y="266" width="627" height="569" key="find.popup" timestamp="1607646865557">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
     <state x="646" y="241" width="627" height="568" key="find.popup/0.0.1920.1050/1920.0.1536.834@0.0.1920.1050" timestamp="1601432631906" />
-    <state x="1024" y="266" width="627" height="569" key="find.popup/0.0.1920.1050/1920.0.1536.864@0.0.1920.1050" timestamp="1606779666971" />
+    <state x="1024" y="266" width="627" height="569" key="find.popup/0.0.1920.1050/1920.0.1536.864@0.0.1920.1050" timestamp="1607646865557" />
     <state x="646" y="248" width="627" height="585" key="find.popup/0.0.1920.1080/1920.0.1536.864@0.0.1920.1080" timestamp="1601519522170" />
-  </component>
-  <component name="XDebuggerManager">
-    <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" type="javascript">
-          <url>file://$PROJECT_DIR$/app.js</url>
-          <line>10</line>
-          <option name="timeStamp" value="1" />
-        </line-breakpoint>
-      </breakpoints>
-    </breakpoint-manager>
   </component>
 </project>
