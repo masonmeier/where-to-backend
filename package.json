@@ -4,18 +4,22 @@
   "description": "",
   "main": "app.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "dev": "nodemon server",
+    "test": "mocha"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "dependencies": {
+    "chai": "^4.2.0",
     "cors": "^2.8.5",
     "express": "^4.17.1",
+    "mocha": "^8.2.1",
     "mysql": "^2.18.1",
     "newsapi": "^2.4.1",
     "node-fetch": "^2.6.1",
-    "pg": "^8.5.1"
+    "pg": "^8.5.1",
+    "supertest": "^6.0.1"
   },
   "devDependencies": {
     "nodemon": "^2.0.4"

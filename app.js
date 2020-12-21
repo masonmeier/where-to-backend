@@ -2,6 +2,7 @@ const express = require("express");
 const app = express();
 const cors = require("cors");
 const listenPort = 3002;
+module.exports = app;
 //respond to any computer that hits this
 const host = "0.0.0.0";
 // const backendAddress = 'ec2-44-238-207-106.us-west-2.compute.amazonaws.com'
@@ -13,7 +14,7 @@ app.use(express.urlencoded());
 // Parse JSON bodies (as sent by API clients)
 app.use(express.json());
 app.use(cors());
-var pg = require("pg");
+const pg = require("pg");
 
 //SQL CALL STARTS HERE
 
@@ -121,7 +122,11 @@ app.get("/weather", async (req, res) => {
   const capital = req.query.q;
   const response = await fetch(
     `https://api.openweathermap.org/data/2.5/forecast?q=${capital}&appid=ff1c70e34ab35b7f59df0cdc87918826`
-  );
+  ).then(function () {
+    console.log("ok");
+  }).catch(function() {
+    console.log("error");
+  });
   const json = await response.json();
   res.send(json);
 });

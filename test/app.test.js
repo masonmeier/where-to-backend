@@ -29,6 +29,7 @@ describe('User Submission', () => {
 });
 
 //News Call Test
+//will pass back all top news headers without params
 describe('News Call', () => {
   it('Should return a response object from NEWS API', () => {
     return supertest(app)
