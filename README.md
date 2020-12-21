@@ -43,18 +43,18 @@ SSL Certification
 
 Screenshots:
 Landing Page
-![landing](/screenshots/where-to-landing.png "LandingPage")
+![landing](./screenshots/where-to-landing.png "LandingPage")
 
 Question
-![Question](/screenshots/where-to-question.png "Question Page")
+![Question](./screenshots/where-to-question.png "Question Page")
 
 Results
-![Results](/screenshots/where-to-results.png "Results")
+![Results](./screenshots/where-to-results.png "Results")
 
 News
-![News](/screenshots/where-to-news.png "News")
+![News](./screenshots/where-to-news.png "News")
 
 Weather
-![Weather](/screenshots/where-to-weather.png "Weather")
+![Weather](./screenshots/where-to-weather.png "Weather")
 
 
