@@ -4,7 +4,7 @@ const cors = require("cors");
 const listenPort = 3002;
 module.exports = app;
 //respond to any computer that hits this
-const host = "0.0.0.0";
+const host = "localhost";
 // const backendAddress = 'ec2-44-238-207-106.us-west-2.compute.amazonaws.com'
 const backendAddress =
   "where-to-database-psql.cgum1ruwasjh.us-west-2.rds.amazonaws.com";
@@ -48,9 +48,6 @@ function runSQL(query) {
       if (err) reject(err);
     });
     con.end((err) => {
-      // The connection is terminated gracefully
-      // Ensures all remaining queries are executed
-      // Then sends a quit packet to the PSQL server.
     });
   });
 }
@@ -73,24 +70,20 @@ app.post("/submit", function (req, res) {
   res.send({ message });
 });
 
-app.use(function (req, res) {
-  console.log("404 error");
-  res.status(404);
+//WEATHER API CALL STARTS HERE
 
-  // respond with html page
-  if (req.accepts("html")) {
-    res.render("404", { url: req.url });
-    return;
-  }
-
-  // respond with json
-  if (req.accepts("json")) {
-    res.send({ error: "Not found" });
-    return;
-  }
-
-  // default to plain-text. send()
-  res.type("txt").send("Not found");
+app.get("/weather", async (req, res) => {
+  const fetch = require("node-fetch");
+  const capital = req.query.q;
+  const response = await fetch(
+    `https://api.openweathermap.org/data/2.5/forecast?q=${capital}&appid=ff1c70e34ab35b7f59df0cdc87918826`
+  ).then(function () {
+    console.log("ok");
+  }).catch(function() {
+    console.log("error");
+  });
+  const json = await response.json();
+  res.send(json);
 });
 
 //NEWS API CALL STARTS HERE
@@ -115,20 +108,24 @@ app.get("/news", (req, res) => {
     });
 });
 
-//WEATHER API CALL STARTS HERE
+app.use(function (req, res) {
+  console.log("404 error");
+  res.status(404);
 
-app.get("/weather", async (req, res) => {
-  const fetch = require("node-fetch");
-  const capital = req.query.q;
-  const response = await fetch(
-    `https://api.openweathermap.org/data/2.5/forecast?q=${capital}&appid=ff1c70e34ab35b7f59df0cdc87918826`
-  ).then(function () {
-    console.log("ok");
-  }).catch(function() {
-    console.log("error");
-  });
-  const json = await response.json();
-  res.send(json);
+  // respond with html page
+  if (req.accepts("html")) {
+    res.render("404", { url: req.url });
+    return;
+  }
+
+  // respond with json
+  if (req.accepts("json")) {
+    res.send({ error: "Not found" });
+    return;
+  }
+
+  // default to plain-text. send()
+  res.type("txt").send("Not found");
 });
 
 app.listen(listenPort, host, () =>
